@@ -1,0 +1,150 @@
+* {
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+position: absolute;
+width: 270px;
+height: 100px;
+left: 64px;
+top: 5px;
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 65px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #F2AF00;
+
+}
+.fraseinicial{
+position: absolute;
+width: 570px;
+height: 65px;
+left: 698px;
+top: 215px;
+font-family: 'Nunito', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 65px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #F2AF00;
+}
+
+.imagemcatdog{
+position: absolute;
+width: 480px;
+height: 416px;
+left: 743px;
+top: 299px;
+background: url(/images/dog_cat\ .png);
+border-radius: 200px;
+}
+
+div#corpoformulario{
+position: absolute;
+left: 100px;
+top: 300px;
+font-size: 18px;
+}
+div#corpoformulario_cadastro{
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    font-size: 18px;
+    }
+
+
+.cardgroup > input{
+height: 45px;
+width: 350px;
+display: block;
+margin-top: 15px;
+margin-bottom: 15px;
+background: #F9F4F4;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 10px;
+color: #4C4C4C;
+outline: none;
+padding: 10px;
+}
+
+
+.cardgroup_cadastro > input{
+    height: 45px;
+    width: 160px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #F9F4F4;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #4C4C4C;
+    outline: none;
+    padding: 10px;
+   
+}
+
+.texto_sobrenome{
+    color: red;
+    display: inline;
+}
+
+
+.cardgroup > button
+{
+height: 40px;
+width: 350px;
+padding: 10px;
+text-decoration: none;
+background-color:#4AC99B ;
+border-radius: 10px;
+color: #F9F4F4;
+border: none;
+box-sizing: border-box;
+border-radius: 10px;
+outline: none;
+padding: 10px;
+border-radius: 10px;
+
+}
+
+
+
+#pwdf,
+#cadastrar,
+.cardgroup > a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    height: 100px;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #F2AF00;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+
+
+#pwdf:hover,
+#cadastrar:hover{
+    color: blue;
+}
+
+#dont
+{
+    font-size: 14px;
+    color: #4C4C4C;
+}
+

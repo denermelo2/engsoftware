@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- verificar para autenticar e validar as permissoes o link https://youtu.be/GAGRrVVD3js?t=1245-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=0" /> <!-- Deixa o site responsivo-->
@@ -31,16 +31,16 @@
     </div>
 
     <div id="corpoformulario">
-        <form method="POST">
+        <form  action="login.php" method="POST">
 
             <div class="cardgroup">
                 <label>E-mail</label>
-                <input type="email" name="email" placeholder="seu@email.com">
+                <input type="email" name="email"  required='required'  placeholder="seu@email.com">
             </div>
 
             <div class="cardgroup">
                 <label>Senha</label>
-                <input type="password" name="senha" placeholder="******"> 
+                <input type="password" name="senha" required='required' placeholder="******"> 
             </div>
 
             <div class="cardgroup a">
@@ -53,7 +53,7 @@
             </div>
 
             <text id="dont">Não tem uma conta?</text>
-            <a href="./cadastro.html" id="cadastrar"> <strong>Crie uma!</strong></a>
+            <a href="./cadastroForm.html" id="cadastrar"> <strong>Crie uma!</strong></a>
         </form>
     </div>
 

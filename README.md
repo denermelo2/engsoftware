@@ -1,3 +1,13 @@
+Alterações projeto - 10/09/2020
+
+Adicionado a Codigo Fonte arquivos para logar e exibir o primeiro painel para o usuario
+
+Adicionado Botão de Logout dentro do painel
+
+Modificado Nomes para maior entendimento das funcoes aplicadas.
+
+
+
 ---------------------------------------------------------------
 Alterações projeto - 07/09/2020
 

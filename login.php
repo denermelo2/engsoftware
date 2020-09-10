@@ -1,16 +1,25 @@
-<?php 
+<?php
 
-	include_once("conexao.php");
+session_start();
+include ('conexao.php'); //include na conexao para pegar a conexão criada dentro do arquivo conexao.php
 
-	$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-	$sobrenome = filter_input(INPUT_POST, 'sobrenome', FILTER_SANITIZE_STRING);
-	$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-	$senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
-	$cpf = filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_STRING);
-	$celular = filter_input(INPUT_POST, 'celular', FILTER_SANITIZE_STRING);
+if (empty($_POST['email']) || empty($_POST['senha'])) {
+    header ('Location: index.html');
+    exit(); //verifica se o campo de email e senha esta em branco, se estiver retorna para o index.html entrando em loop, se estiver em branco o cod segue
+}
 
-	$result_usuarios = "INSERT INTO usuarios (nome, sobrenome, email, senha, cpf, celular) VALUES ('$nome', '$sobrenome', '$email', MD5 ('$senha'), '$cpf', '$celular')";
+$email = mysqli_real_escape_string($conn, $_POST['email']); //proteções contra ataques de sql injection no login
+$senha = mysqli_real_escape_string($conn, $_POST['senha']); //proteções contra ataques de sql injection no login
 
-	$resultado_usuario = mysqli_query($conn, $result_usuarios);
-	
- ?>
+
+$query = "select codigo, email from usuarios where email ='{$email}' and senha = md5('{$senha}')"; //verifica se o email e a senha são iguais aos que estão preechidos no BD
+$result =mysqli_query($conn, $query); //executa o query no banco de dados
+$row = mysqli_num_rows ($result); //exibe a quantidade de linhas retornadas pelo banco de dados
+
+if($row == 1){
+    $_SESSION ['email']= $email;
+    header('Location: painelUsuario.php');
+    exit();
+}else{
+    header('Location: index.html');
+}

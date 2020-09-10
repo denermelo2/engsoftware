@@ -1,10 +1,10 @@
 Alterações projeto - 10/09/2020
 
-Adicionado a Codigo Fonte arquivos para logar e exibir o primeiro painel para o usuario
+Adicionado a Codigo Fonte arquivos para logar e exibir o primeiro painel para o usuario. //Dener
 
-Adicionado Botão de Logout dentro do painel
+Adicionado Botão de Logout dentro do painel. // Dener
 
-Modificado Nomes para maior entendimento das funcoes aplicadas.
+Modificado Nomes para maior entendimento das funcoes aplicadas. // Dener
 
 
 

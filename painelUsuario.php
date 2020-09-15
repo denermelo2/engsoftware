@@ -1,12 +1,25 @@
-<?php
+<html>
 
-session_start();
-?>
-
-<h2>Olá, 
-    <?php echo
-    $_SESSION['email'];
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="painelUsuario.css">
+    <title> Bem vindo </title>
     
-    ?></h2>
+</head>
 
-    <h2> <a href ="logout.php"> Sair </a> </h2>
+<body>
+    <div class="leftmenu">
+    <div class="user_name"><?php session_start(); ?> <?php echo $_SESSION['email']; ?></div>
+    </div>
+    <div class="container">
+        <div class="top">
+            <div class="top_right"> <a href ="logout.php"> Sair </a></div>
+            <div class = "top_right">Olá, <?php echo $_SESSION['email']; ?></div>
+    </div>
+    
+</body>
+</html>
+
+
+
+    

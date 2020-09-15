@@ -1,3 +1,7 @@
+Adicionado recuperação de senha e validação via token - Nesta função o banco de dados valida se o token ja foi utilizado para recuperar a senha
+anteriormente possibilitando apenas um uso unico. // Dener
+
+--------------------------------------------------------------
 Alterações projeto - 10/09/2020
 
 Adicionado a Codigo Fonte arquivos para logar e exibir o primeiro painel para o usuario. //Dener

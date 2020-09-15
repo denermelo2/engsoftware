@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    
+}
+.leftmenu{
+    width: 200px;
+    background-color: #F2AF00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.user_name{
+    height: 100px;
+    line-height: 100px;
+    font-size: 18px;
+    align-self: center;
+    padding: 8px;
+    color: black;
+    
+}
+.container{
+padding-left: 200px;
+}
+.top{
+    height: 40px;
+    background-color: #F2AF00;
+    color: black;
+    font-size: 15px;
+    opacity: 80%;
+}
+
+.top_right{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top_right a{
+    color: black;
+    text-decoration: none;
+}

@@ -12,7 +12,7 @@ $email = mysqli_real_escape_string($conn, $_POST['email']); //proteções contra
 $senha = mysqli_real_escape_string($conn, $_POST['senha']); //proteções contra ataques de sql injection no login
 
 
-$query = "select codigo, email from usuarios where email ='{$email}' and senha = md5('{$senha}')"; //verifica se o email e a senha são iguais aos que estão preechidos no BD
+$query = "select id, email from usuarios where email ='{$email}' and senha = md5('{$senha}')"; //verifica se o email e a senha são iguais aos que estão preechidos no BD
 $result =mysqli_query($conn, $query); //executa o query no banco de dados
 $row = mysqli_num_rows ($result); //exibe a quantidade de linhas retornadas pelo banco de dados
 
@@ -23,3 +23,4 @@ if($row == 1){
 }else{
     header('Location: index.html');
 }
+

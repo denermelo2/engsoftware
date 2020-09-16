@@ -1,3 +1,6 @@
+Adicionado imagens de telas na pasta images.
+Adicionado SQL do Banco de dados utilizado na pasta database. //Dener
+--------------------------------------------------------------
 Adicionado recuperação de senha e validação via token - Nesta função o banco de dados valida se o token ja foi utilizado para recuperar a senha
 anteriormente possibilitando apenas um uso unico. // Dener
 

@@ -1,6 +1,8 @@
 <?php 
 
 	include_once("conexao.php");
+	error_reporting(0);
+	ini_set(“display_errors”, 0 );
 
 	$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 	$sobrenome = filter_input(INPUT_POST, 'sobrenome', FILTER_SANITIZE_STRING);
@@ -13,6 +15,13 @@
 
 	$resultado_usuario = mysqli_query($conn, $result_usuarios);
 
-	echo "Cadastro realizado com sucesso!";
-	
- ?>
+	if($resultado_usuario){
+
+		header("Location: cadastro_sucesso.html");
+		exit();
+	 
+	 } else{
+		header("Location: cadastro_naorealizado.html");
+		exit();
+	}
+?>

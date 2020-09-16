@@ -26,7 +26,7 @@ position: absolute;
 width: 570px;
 height: 65px;
 left: 710px;
-top: 215px;
+top: 140px;
 font-family: 'Nunito', sans-serif;
 font-style: normal;
 font-weight: bold;
@@ -38,12 +38,39 @@ text-align: center;
 color: #F2AF00;
 }
 
+.frase_cadastro{
+position: absolute;
+width: 570px;
+height: 66px;
+left: 100px;
+top: 250px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #F2AF00;
+}
+
+.falha{
+    
+    
+    
+    left: 150px;
+    
+    }
+
+
+
 .imagemcatdog{
 position: absolute;
 width: 480px;
 height: 416px;
 left: 743px;
-top: 299px;
+top: 230px;
 background: url(/images/dog_cat\ .png);
 border-radius: 200px;
 }

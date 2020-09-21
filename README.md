@@ -1,9 +1,12 @@
+Alterações 21/09/2020
+
+    Adicionado Menu da página Painel de Usuário (Incompleto ainda) Front-end //Dener
 --------------------------------------------------------------
 Alterações Projeto 15/09/2020
 
 Adicionado imagens de telas na pasta images.
 Adicionado SQL do Banco de dados utilizado na pasta database. //Dener
---------------------------------------------------------------
+
 Alterações Projeto 14/09/2020
 
 Adicionado recuperação de senha e validação via token - Nesta função o banco de dados valida se o token ja foi utilizado para recuperar a senha
